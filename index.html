@@ -16,7 +16,8 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
     
-    <!-- Fonts -->
+                    <!-- Tally script and Fonts -->
+                <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.head.appendChild(s);}</script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Styles -->
@@ -766,7 +767,8 @@
                         <h1>Transform Your Business with AI Automation</h1>
                         <p>Empower your solopreneur journey and small business growth with cutting-edge AI solutions. From education to implementation, we're your trusted partner in the AI revolution.</p>
                         <div class="hero-buttons">
-                            <a href="#" class="btn-primary" onclick="showPage('contact')">Start Your AI Journey</a>
+                            <!-- CTA Button that opens consultation form -->
+                            <button class="btn-primary" onclick="openConsultationForm()">Start Your AI Journey</button>
                             <a href="#" class="btn-secondary" onclick="showPage('services')">Explore Services</a>
                         </div>
                     </div>
@@ -827,12 +829,28 @@
                 </div>
             </section>
 
+            <!-- Newsletter Signup Section -->
+            <section class="newsletter-signup" style="background: var(--primary); padding: 3rem 0; margin: 4rem 0;">
+                <div class="container">
+                    <div style="max-width: 600px; margin: 0 auto; text-align: center; color: white;">
+                        <h2 style="color: white; margin-bottom: 1rem;">Stay Ahead with AI Insights</h2>
+                        <p style="color: rgba(255,255,255,0.9); margin-bottom: 2rem; font-size: 1.1rem;">Get weekly tips, case studies, and automation strategies delivered to your inbox. Join 1,000+ business owners transforming their operations with AI.</p>
+                        
+                        <!-- Newsletter Tally Form -->
+                        <iframe data-tally-src="https://tally.so/embed/mJvOpX?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="732" frameborder="0" marginheight="0" marginwidth="0" title="Get Weekly AI Insights"></iframe>
+                    </div>
+                </div>
+            </section>
             <!-- CTA Section -->
             <section class="cta-section">
                 <div class="container">
                     <h2>Ready to Transform Your Business?</h2>
                     <p>Join hundreds of successful entrepreneurs who have already automated their workflows and scaled their businesses with our AI solutions.</p>
-                    <a href="#" class="cta-button" onclick="showPage('contact')">Schedule Free Consultation</a>
+                    
+                    <!-- Quick Consultation CTA Form -->
+                    <div style="max-width: 600px; margin: 2rem auto;">
+                        <iframe data-tally-src="https://tally.so/embed/w7rN20?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="792" frameborder="0" marginheight="0" marginwidth="0" title="Free Consultation CTA"></iframe>
+                    </div>
                 </div>
             </section>
         </div>
@@ -1194,19 +1212,8 @@
                             <h2>Client Intake Form</h2>
                             <p style="margin-bottom: 2rem;">Please fill out this form to schedule your free consultation. We'll use this information to prepare a customized discussion about your AI automation needs.</p>
                             
-                            <!-- Tally Form Embed Placeholder -->
-                            <div style="background: var(--gray-100); padding: 2rem; border-radius: 8px; text-align: center; border: 2px dashed #ccc;">
-                                <h3>Tally Form Integration</h3>
-                                <p>Replace this section with your Tally form embed code.</p>
-                                <p><strong>Instructions:</strong></p>
-                                <ol style="text-align: left; max-width: 400px; margin: 0 auto;">
-                                    <li>Create your intake form in Tally</li>
-                                    <li>Get the embed code</li>
-                                    <li>Replace this placeholder div with the embed code</li>
-                                </ol>
-                                <br>
-                                <a href="https://tally.so" target="_blank" class="btn-primary">Create Tally Form</a>
-                            </div>
+                            <!-- Client Intake Form -->
+                            <iframe data-tally-src="https://tally.so/embed/nrMarp?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1696" frameborder="0" marginheight="0" marginwidth="0" title="Client Intake Form"></iframe>
 
                             <!-- Alternative Contact Form (if Tally not ready) -->
                             <div style="margin-top: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
@@ -1432,9 +1439,16 @@
             animateOnScroll();
         });
 
+        // CTA Functions for forms
+        function openConsultationForm() {
+            // Scroll to the CTA section with the consultation form
+            document.querySelector('.cta-section').scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }
         // SEO and Analytics placeholder functions
         function trackPageView(pageName) {
-            // Google Analytics tracking code would go here
             console.log('Page view tracked:', pageName);
         }
 
