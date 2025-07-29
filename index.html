@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clearview Strategy Group - AI Automation Specialists</title>
-    <meta name="description" content="Transform your business with AI automation. Clearview Strategy Group provides AI education, consultation, and implementation services for solopreneurs and small businesses.">
-    <meta name="keywords" content="AI automation, business automation, AI consulting, small business AI, solopreneur tools">
+    <title>Clearview Strategy Group - AI Automation Tailored for Small Business</title>
+    <meta name="description" content="Stop juggling repetitive tasks and start focusing on what really matters. We make advanced AI automation simple, actionable and accessible for solopreneurs and small businesses.">
+    <meta name="keywords" content="AI automation, small business automation, solopreneur AI, professional services automation, AI strategy consulting">
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="CSG AI - AI Automation Agency">
-    <meta property="og:description" content="Transform your business with AI automation solutions">
+    <meta property="og:title" content="Clearview Strategy Group - AI Automation Tailored for Small Business">
+    <meta property="og:description" content="Stop juggling repetitive tasks and start focusing on what really matters - serving clients and growing your business">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://csgai.com">
+    <meta property="og:url" content="https://clearviewstrategy.com">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
     
-                    <!-- Tally script and Fonts -->
-                <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.head.appendChild(s);}</script>
+    <!-- Tally script and Fonts -->
+    <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Styles -->
@@ -172,7 +172,7 @@
             font-size: 1.25rem;
             margin-bottom: 2rem;
             opacity: 0.9;
-            max-width: 600px;
+            max-width: 700px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -217,10 +217,10 @@
             color: var(--primary);
         }
 
-        /* Services Overview */
-        .services-overview {
+        /* Problem Section */
+        .problem-section {
             padding: 5rem 0;
-            background: var(--light);
+            background: white;
         }
 
         .section-header {
@@ -238,24 +238,60 @@
         .section-header p {
             font-size: 1.1rem;
             color: var(--secondary);
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .problem-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .problem-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .problem-card p {
+            color: var(--secondary);
+            line-height: 1.7;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #856404;
+        }
+
+        /* Services Overview */
+        .services-overview {
+            padding: 5rem 0;
+            background: var(--light);
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
 
         .service-card {
             background: white;
-            padding: 2rem;
+            padding: 2.5rem;
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-align: center;
         }
 
         .service-card:hover {
@@ -271,7 +307,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 1.5rem;
+            margin-bottom: 1.5rem;
             font-size: 1.5rem;
         }
 
@@ -287,8 +323,33 @@
             margin-bottom: 1.5rem;
         }
 
-        /* Stats Section */
-        .stats {
+        .service-features {
+            margin: 1.5rem 0;
+        }
+
+        .service-features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+            color: var(--secondary);
+        }
+
+        .service-features li::before {
+            content: "✓";
+            color: var(--success);
+            font-weight: bold;
+            margin-top: 0.1rem;
+        }
+
+        /* Proof Section */
+        .proof-section {
             padding: 4rem 0;
             background: var(--dark);
             color: white;
@@ -299,24 +360,61 @@
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 2rem;
             text-align: center;
+            margin-top: 2rem;
         }
 
-        .stat-item h3 {
-            font-size: 2.5rem;
+        .stat-item {
+            padding: 1.5rem;
+        }
+
+        .stat-item .stat-number {
+            font-size: 3rem;
             font-weight: 700;
             color: var(--accent);
             margin-bottom: 0.5rem;
+            display: block;
         }
 
         .stat-item p {
-            font-size: 1.1rem;
+            font-size: 1rem;
             opacity: 0.9;
+        }
+
+        /* Why Choose Us Section */
+        .why-choose-section {
+            padding: 5rem 0;
+            background: white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+            background: var(--light);
+        }
+
+        .feature-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .feature-card p {
+            color: var(--secondary);
         }
 
         /* CTA Section */
         .cta-section {
             padding: 5rem 0;
-            background: var(--gray-100);
+            background: var(--gradient);
+            color: white;
             text-align: center;
         }
 
@@ -324,19 +422,26 @@
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
-            color: var(--dark);
         }
 
         .cta-section p {
-            font-size: 1.1rem;
-            color: var(--secondary);
+            font-size: 1.2rem;
             margin-bottom: 2rem;
+            opacity: 0.9;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
         }
 
-        /* Services Page */
+        /* Newsletter Section */
+        .newsletter-section {
+            padding: 4rem 0;
+            background: var(--primary);
+            color: white;
+            text-align: center;
+        }
+
+        /* Services Page Specific */
         .services-hero {
             background: var(--gradient);
             color: white;
@@ -367,31 +472,30 @@
             padding: 2rem;
         }
 
-        .service-features {
+        .pricing-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1.5rem;
             margin: 2rem 0;
         }
 
-        .feature-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
+        .pricing-card {
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
         }
 
-        .feature-icon {
-            width: 24px;
-            height: 24px;
-            background: var(--success);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 0.8rem;
-            flex-shrink: 0;
-            margin-top: 2px;
+        .pricing-card h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-card .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--dark);
+            margin-bottom: 1rem;
         }
 
         /* About Page */
@@ -406,31 +510,40 @@
             padding: 5rem 0;
         }
 
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
+        .about-section {
             margin-bottom: 4rem;
         }
 
-        .mission-values {
-            background: var(--light);
-            padding: 4rem 0;
+        .about-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
         }
 
         .values-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
+            margin-top: 2rem;
         }
 
         .value-card {
-            background: white;
-            padding: 1.5rem;
+            background: var(--light);
+            padding: 2rem;
             border-radius: 8px;
             text-align: center;
+        }
+
+        .value-card h4 {
+            color: var(--primary);
+            margin-bottom: 1rem;
         }
 
         /* Contact Page */
@@ -455,74 +568,6 @@
             background: var(--light);
             padding: 2rem;
             border-radius: 12px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .contact-icon {
-            width: 40px;
-            height: 40px;
-            background: var(--primary);
-            color: white;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Blog Page */
-        .blog-hero {
-            background: var(--gradient);
-            color: white;
-            padding: 4rem 0;
-            text-align: center;
-        }
-
-        .blog-content {
-            padding: 5rem 0;
-        }
-
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-        }
-
-        .blog-card {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-
-        .blog-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .blog-image {
-            height: 200px;
-            background: var(--gradient);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 2rem;
-        }
-
-        .blog-card-content {
-            padding: 1.5rem;
-        }
-
-        .blog-meta {
-            color: var(--secondary);
-            font-size: 0.9rem;
-            margin-bottom: 0.5rem;
         }
 
         /* Footer */
@@ -570,76 +615,6 @@
             color: rgba(255, 255, 255, 0.6);
         }
 
-        /* Chatbot */
-        .chatbot-widget {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-        }
-
-        .chatbot-button {
-            width: 60px;
-            height: 60px;
-            background: var(--gradient);
-            border: none;
-            border-radius: 50%;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
-            transition: transform 0.3s ease;
-        }
-
-        .chatbot-button:hover {
-            transform: scale(1.1);
-        }
-
-        .chatbot-popup {
-            position: absolute;
-            bottom: 70px;
-            right: 0;
-            width: 300px;
-            height: 400px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-            display: none;
-            flex-direction: column;
-        }
-
-        .chatbot-popup.active {
-            display: flex;
-        }
-
-        .chatbot-header {
-            background: var(--gradient);
-            color: white;
-            padding: 1rem;
-            border-radius: 12px 12px 0 0;
-            font-weight: 600;
-        }
-
-        .chatbot-messages {
-            flex: 1;
-            padding: 1rem;
-            overflow-y: auto;
-            font-size: 0.9rem;
-        }
-
-        .chatbot-input {
-            padding: 1rem;
-            border-top: 1px solid #e2e8f0;
-        }
-
-        .chatbot-input input {
-            width: 100%;
-            padding: 0.5rem;
-            border: 1px solid #e2e8f0;
-            border-radius: 6px;
-            outline: none;
-        }
-
         /* Responsive Design */
         @media (max-width: 768px) {
             .mobile-menu-btn {
@@ -671,7 +646,7 @@
                 align-items: center;
             }
 
-            .about-grid, .contact-grid {
+            .contact-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
@@ -680,9 +655,9 @@
                 font-size: 2rem;
             }
 
-            .chatbot-popup {
-                width: calc(100vw - 40px);
-                right: -20px;
+            .problem-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
             }
         }
 
@@ -701,42 +676,6 @@
         .fade-in {
             animation: fadeInUp 0.6s ease-out forwards;
         }
-
-        /* Form Styles */
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-            color: var(--dark);
-        }
-
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #e2e8f0;
-            border-radius: 6px;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
     </style>
 </head>
 <body>
@@ -748,9 +687,10 @@
                 <li><a href="#" onclick="showPage('home')" class="active">Home</a></li>
                 <li><a href="#" onclick="showPage('services')">Services</a></li>
                 <li><a href="#" onclick="showPage('about')">About</a></li>
+                <li><a href="#" onclick="showPage('tools')">Tools</a></li>
                 <li><a href="#" onclick="showPage('blog')">Blog</a></li>
-                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
-                <li><a href="#" class="cta-button">Get Started</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact Us</a></li>
+                <li><a href="#" class="cta-button" onclick="showPage('contact')">Book Free Strategy Session</a></li>
             </ul>
             <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
         </nav>
@@ -764,38 +704,36 @@
             <section class="hero">
                 <div class="container">
                     <div class="hero-content fade-in">
-                        <h1>Transform Your Business with AI Automation</h1>
-                        <p>Empower your solopreneur journey and small business growth with cutting-edge AI solutions. From education to implementation, we're your trusted partner in the AI revolution.</p>
+                        <h1>Unlock Growth With AI Automation Tailored for Small Business</h1>
+                        <p>Stop juggling repetitive tasks and start focusing on what really matters – serving clients and growing your business. At Clearview Strategy Group, we make advanced automation simple, actionable and accessible for solopreneurs, professional services firms and small businesses.</p>
                         <div class="hero-buttons">
-                            <a href="#" class="btn-primary" onclick="showPage('contact')">Book Your Free Consultation</a>
+                            <a href="#" class="btn-primary" onclick="showPage('contact')">Book My Free AI Strategy Session</a>
                             <a href="#" class="btn-secondary" onclick="scrollToNewsletter()">Get Weekly AI Insights</a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Blog Page CTA -->
-            <section class="cta-section">
+            <!-- Problem Section -->
+            <section class="problem-section">
                 <div class="container">
-                    <h2>Ready to Implement What You've Learned?</h2>
-                    <p>Turn these AI insights into real results for your business. Let's create your custom automation strategy.</p>
-                </div>
-            </section>
-
-            <!-- About Page CTA -->
-            <section class="cta-section">
-                <div class="container">
-                    <h2>Let's Transform Your Business Together</h2>
-                    <p>Ready to join our growing community of successful AI-powered businesses? Let's start with a conversation.</p>
-                </div>
-            </section>
-
-            <!-- Services Page CTA -->
-            <section class="cta-section">
-                <div class="container">
-                    <h2>Ready to Get Started?</h2>
-                    <p>Schedule your free consultation to discuss which AI automation solution is right for your business.</p>
-                    <a href="#" class="cta-button" onclick="showPage('contact')">Book Your Free Consultation Now</a>
+                    <div class="section-header">
+                        <h2>The Problem We Solve</h2>
+                    </div>
+                    <div class="problem-grid">
+                        <div class="problem-card">
+                            <h3>The Challenge</h3>
+                            <p>Manual workflows, endless administrative tasks and outdated processes keep small businesses from scaling. Research shows that roughly <span class="highlight">60% of companies already use automation tools</span>, yet small businesses and professional services firms often struggle to know where to start.</p>
+                        </div>
+                        <div class="problem-card">
+                            <h3>The Frustration</h3>
+                            <p>Time spent on repetitive tasks takes you away from clients and drains resources. Salesforce reports that <span class="highlight">74% of employees using automation say it helps them work faster</span>, freeing up time for strategic work. With AI already in play, staying stagnant means falling behind.</p>
+                        </div>
+                        <div class="problem-card">
+                            <h3>The Solution</h3>
+                            <p>Clearview Strategy Group bridges the gap between cutting-edge AI and practical business needs. We educate you on the tools, craft a custom strategy and implement intelligent automation so you can reclaim your time and accelerate growth.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -803,74 +741,166 @@
             <section class="services-overview">
                 <div class="container">
                     <div class="section-header">
-                        <h2>Our AI Solutions</h2>
-                        <p>Comprehensive AI automation services designed specifically for solopreneurs, professional services, and small businesses ready to scale.</p>
+                        <h2>Comprehensive AI Services</h2>
+                        <p>We offer three pillars that work together or independently to meet you where you are in your AI journey:</p>
                     </div>
                     <div class="services-grid">
                         <div class="service-card fade-in">
                             <div class="service-icon">🎓</div>
                             <h3>AI Education</h3>
-                            <p>Master AI tools and strategies with our comprehensive training programs designed for business owners and professionals.</p>
+                            <p>Learn how AI can transform your operations through concise courses and workshops.</p>
+                            <div class="service-features">
+                                <ul>
+                                    <li>AI Fundamentals – understand key concepts and business applications</li>
+                                    <li>Tool-Specific Training – get hands-on with ChatGPT, Claude, Make and other essential tools</li>
+                                    <li>Industry-Specific Workshops – tailored sessions for dental practices, medspas and professional services</li>
+                                    <li>Community & Support – ongoing access to experts and peers</li>
+                                </ul>
+                            </div>
                             <a href="#" class="btn-primary" onclick="showPage('services')">Learn More</a>
                         </div>
+                        
                         <div class="service-card fade-in">
                             <div class="service-icon">💡</div>
-                            <h3>AI Consultations</h3>
-                            <p>Get expert guidance on AI strategy, tool selection, and implementation planning tailored to your specific business needs.</p>
-                            <a href="#" class="btn-primary" onclick="showPage('services')">Learn More</a>
+                            <h3>AI Strategy Consulting</h3>
+                            <p>Work one-on-one with an AI strategist to evaluate your readiness and design a roadmap.</p>
+                            <div class="service-features">
+                                <ul>
+                                    <li>AI Readiness Assessment – review your processes and identify automation opportunities</li>
+                                    <li>Custom AI Roadmap – receive a tailored plan aligned with your goals and tech stack</li>
+                                    <li>Tool Selection Guidance – choose the right AI platforms based on ROI and ease of integration</li>
+                                    <li>ROI Forecasting – gain confidence in your investment by seeing how AI could reclaim 500+ hours a year</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn-primary" onclick="showPage('services')">Get Started</a>
                         </div>
+                        
                         <div class="service-card fade-in">
                             <div class="service-icon">⚙️</div>
-                            <h3>AI Implementation</h3>
-                            <p>Complete done-for-you AI automation setup and integration to streamline your workflows and boost productivity.</p>
-                            <a href="#" class="btn-primary" onclick="showPage('services')">Learn More</a>
+                            <h3>AI Implementation & Integration</h3>
+                            <p>Let our experts handle the technical work while you focus on running your business.</p>
+                            <div class="service-features">
+                                <ul>
+                                    <li>Workflow Automation – eliminate repetitive tasks across operations, finance, marketing and customer service</li>
+                                    <li>Chatbot Deployment – build custom chatbots for lead capture and client support</li>
+                                    <li>System Integration – connect AI tools with your existing software</li>
+                                    <li>Training & Handoff – ensure your team is confident using new workflows</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn-primary" onclick="showPage('services')">Implement Now</a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Stats Section -->
-            <section class="stats">
+            <!-- Proof Section -->
+            <section class="proof-section">
                 <div class="container">
+                    <div class="section-header" style="color: white;">
+                        <h2>AI Isn't Just Hype</h2>
+                        <p style="color: rgba(255,255,255,0.9);">Independent research underscores its impact:</p>
+                    </div>
                     <div class="stats-grid">
                         <div class="stat-item">
-                            <h3>500+</h3>
-                            <p>Businesses Automated</p>
+                            <span class="stat-number">60%</span>
+                            <p>of companies are already using automation solutions</p>
                         </div>
                         <div class="stat-item">
-                            <h3>85%</h3>
-                            <p>Average Time Savings</p>
+                            <span class="stat-number">80%</span>
+                            <p>of finance department transactional work can be automated</p>
                         </div>
                         <div class="stat-item">
-                            <h3>24/7</h3>
-                            <p>AI Support Available</p>
+                            <span class="stat-number">74%</span>
+                            <p>of employees report working faster after adopting automation</p>
                         </div>
                         <div class="stat-item">
-                            <h3>98%</h3>
-                            <p>Client Satisfaction</p>
+                            <span class="stat-number">82%</span>
+                            <p>of sales professionals can devote more time to clients once routine tasks are automated</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">88%</span>
+                            <p>of employees using automation tools trust their accuracy</p>
+                        </div>
+                    </div>
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <p style="font-size: 1.1rem; opacity: 0.9;">Let these numbers give you peace of mind—AI automation consistently generates tangible benefits in every part of your business.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Us Section -->
+            <section class="why-choose-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Why Choose Clearview Strategy Group?</h2>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <h4>Useful</h4>
+                            <p>Our solutions are designed specifically for solopreneurs and small, service-based businesses.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4>Urgent</h4>
+                            <p>Competitors are already automating; waiting means losing efficiency and market share.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4>Unique</h4>
+                            <p>We combine education, strategy and implementation under one roof, giving you a single partner for every stage of your AI journey.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4>Ultra-Specific</h4>
+                            <p>We don't offer vague promises; we provide concrete roadmaps, hands-on training and integration support tailored to your business type.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Newsletter Signup Section -->
-            <section class="newsletter-signup" style="background: var(--primary); padding: 3rem 0; margin: 4rem 0;">
+            <!-- Benefits Section -->
+            <section class="services-overview" style="background: white;">
                 <div class="container">
-                    <div style="max-width: 600px; margin: 0 auto; text-align: center; color: white;">
-                        <h2 style="color: white; margin-bottom: 1rem;">Stay Ahead with AI Insights</h2>
-                        <p style="color: rgba(255,255,255,0.9); margin-bottom: 2rem; font-size: 1.1rem;">Get weekly tips, case studies, and automation strategies delivered to your inbox. Join 1,000+ business owners transforming their operations with AI.</p>
-                        
-                        <!-- Newsletter Tally Form -->
-                        <iframe data-tally-src="https://tally.so/embed/mJvOpX?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="732" frameborder="0" marginheight="0" marginwidth="0" title="Get Weekly AI Insights"></iframe>
+                    <div class="section-header">
+                        <h2>Benefits of Partnering With Us</h2>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <h4>💰 Save Time and Money</h4>
+                            <p>Redirect hours spent on manual tasks toward revenue-generating activities.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4>🎯 Gain Clarity and Confidence</h4>
+                            <p>Understand exactly which AI tools will deliver the greatest ROI.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4>🚀 Stay Ahead of Competitors</h4>
+                            <p>Join the growing percentage of businesses leveraging automation to innovate and scale.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4>🤝 Receive Ongoing Support</h4>
+                            <p>We don't leave you with software and goodbye—we provide training and continuous guidance.</p>
+                        </div>
                     </div>
                 </div>
             </section>
-            <!-- CTA Section -->
+
+            <!-- Newsletter Section -->
+            <section class="newsletter-section">
+                <div class="container">
+                    <div style="max-width: 700px; margin: 0 auto;">
+                        <h2 style="margin-bottom: 1rem; font-size: 2.2rem;">Get Weekly AI Insights</h2>
+                        <p style="margin-bottom: 2rem; font-size: 1.2rem; opacity: 0.9;">Subscribe to a newsletter that delivers practical tips and case studies.</p>
+                        
+                        <!-- Newsletter Tally Form -->
+                        <iframe data-tally-src="https://tally.so/embed/mJvOpX?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="742" frameborder="0" marginheight="0" marginwidth="0" title="Get Weekly AI Insights"></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Final CTA Section -->
             <section class="cta-section">
                 <div class="container">
-                    <h2>Ready to Transform Your Business?</h2>
-                    <p>Join hundreds of successful entrepreneurs who have already automated their workflows and scaled their businesses with our AI solutions.</p>
-                    <a href="#" class="cta-button" onclick="showPage('contact')">Book Your Free Consultation Now</a>
+                    <h2>Ready to Start?</h2>
+                    <p>Join the growing community of small business owners transforming their operations with AI.</p>
+                    <a href="#" class="btn-primary" onclick="showPage('contact')" style="background: white; color: var(--primary);">Book My Free AI Strategy Session</a>
                 </div>
             </section>
         </div>
@@ -879,11 +909,8 @@
         <div id="services" class="page">
             <section class="services-hero">
                 <div class="container">
-                    <h1>Our AI Automation Services</h1>
-                    <p>Comprehensive solutions to revolutionize your business operations</p>
-                    <div style="margin-top: 2rem;">
-                        <a href="#" class="cta-button" onclick="showPage('contact')">Book Your Consultation</a>
-                    </div>
+                    <h1>AI Services Designed to Transform Your Business</h1>
+                    <p>Our three service pillars—Education, Strategy Consulting and Implementation—are designed to meet you wherever you are on your automation journey. You can engage with one pillar or all three for a comprehensive transformation.</p>
                 </div>
             </section>
 
@@ -893,148 +920,133 @@
                     <div class="service-detail-card">
                         <div class="service-header">
                             <h2>🎓 AI Education</h2>
-                            <p>Master the fundamentals and advanced strategies of AI automation</p>
+                            <p>Empower yourself with knowledge</p>
                         </div>
                         <div class="service-content">
-                            <p>Our comprehensive AI education programs are designed to empower business owners with the knowledge and skills needed to leverage AI effectively in their operations.</p>
+                            <p style="font-size: 1.1rem; margin-bottom: 2rem;">Learn the fundamentals and advanced strategies of AI through interactive courses and workshops. You'll come away with the skills to identify automation opportunities and confidently use tools like ChatGPT, Claude and Make.</p>
                             
-                            <div class="service-features">
-                                <div class="feature-item">
-                                    <div class="feature-icon">✓</div>
-                                    <div>
-                                        <strong>AI Fundamentals Course</strong><br>
-                                        Learn the basics of AI and its business applications
-                                    </div>
+                            <h3 style="margin-bottom: 1rem;">What You'll Learn</h3>
+                            <ul style="margin-bottom: 2rem; padding-left: 1.5rem;">
+                                <li>Core AI concepts and how they apply to business processes</li>
+                                <li>Best practices for prompt engineering and workflow design</li>
+                                <li>Practical exercises with industry-leading tools</li>
+                                <li>Actionable templates for marketing, operations and client communications</li>
+                            </ul>
+                            
+                            <h3 style="margin-bottom: 1rem;">Pricing Options</h3>
+                            <div class="pricing-grid">
+                                <div class="pricing-card">
+                                    <h4>Foundation Course</h4>
+                                    <div class="price">$297</div>
+                                    <p>A concise introduction to AI fundamentals and tool overview.</p>
                                 </div>
-                                <div class="feature-item">
-                                    <div class="feature-icon">✓</div>
-                                    <div>
-                                        <strong>Tool-Specific Training</strong><br>
-                                        Master ChatGPT, Claude, Make, and other AI tools
-                                    </div>
+                                <div class="pricing-card">
+                                    <h4>Professional Package</h4>
+                                    <div class="price">$597</div>
+                                    <p>Includes advanced training, practical templates and group coaching.</p>
                                 </div>
-                                <div class="feature-item">
-                                    <div class="feature-icon">✓</div>
-                                    <div>
-                                        <strong>Industry-Specific Workshops</strong><br>
-                                        Tailored training for dental, medspa, and professional services
-                                    </div>
-                                </div>
-                                <div class="feature-item">
-                                    <div class="feature-icon">✓</div>
-                                    <div>
-                                        <strong>Ongoing Support</strong><br>
-                                        Access to community and expert guidance
-                                    </div>
+                                <div class="pricing-card">
+                                    <h4>Enterprise Program</h4>
+                                    <div class="price">$1,497</div>
+                                    <p>A complete program with one-on-one coaching and customized curriculum.</p>
                                 </div>
                             </div>
-                            
-                            <h4>Pricing:</h4>
-                            <ul>
-                                <li><strong>Basic Course:</strong> $297 - Fundamentals and tool introduction</li>
-                                <li><strong>Professional Package:</strong> $597 - Includes advanced training and templates</li>
-                                <li><strong>Enterprise Program:</strong> $1,497 - Complete program with 1-on-1 coaching</li>
-                            </ul>
+                            <div style="text-align: center; margin-top: 2rem;">
+                                <a href="#" class="cta-button">Get Started Today</a>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- AI Consultations -->
+                    <!-- AI Strategy Consulting -->
                     <div class="service-detail-card">
                         <div class="service-header">
-                            <h2>💡 AI Consultations</h2>
-                            <p>Strategic guidance tailored to your unique business needs</p>
+                            <h2>💡 AI Strategy Consulting</h2>
+                            <p>Get a roadmap, not just recommendations</p>
                         </div>
                         <div class="service-content">
-                            <p>Get expert advice on AI strategy, implementation planning, and optimization to ensure your AI initiatives deliver maximum ROI.</p>
+                            <p style="font-size: 1.1rem; margin-bottom: 2rem;">Our consultants evaluate your existing processes, help you identify high-impact automation opportunities and develop a phased implementation plan.</p>
                             
-                            <div class="service-features">
-                                <div class="feature-item">
-                                    <div class="feature-icon">✓</div>
-                                    <div>
-                                        <strong>AI Readiness Assessment</strong><br>
-                                        Evaluate your current processes and AI potential
-                                    </div>
+                            <h3 style="margin-bottom: 1rem;">What's Included</h3>
+                            <ul style="margin-bottom: 2rem; padding-left: 1.5rem;">
+                                <li>A 30-minute discovery call to understand your goals and challenges</li>
+                                <li>A comprehensive AI readiness assessment</li>
+                                <li>A custom automation roadmap with prioritized initiatives and estimated ROI</li>
+                                <li>Guidance on tool selection, vendor evaluations and integration considerations</li>
+                            </ul>
+                            
+                            <h3 style="margin-bottom: 1rem;">Pricing Options</h3>
+                            <div class="pricing-grid">
+                                <div class="pricing-card">
+                                    <h4>Discovery Call</h4>
+                                    <div class="price">Free</div>
+                                    <p>A short session to explore your needs.</p>
                                 </div>
-                                <div class="feature-item">
-                                    <div class="feature-icon">✓</div>
-                                    <div>
-                                        <strong>Custom AI Strategy</strong><br>
-                                        Develop a tailored roadmap for AI adoption
-                                    </div>
+                                <div class="pricing-card">
+                                    <h4>Strategy Session</h4>
+                                    <div class="price">$497</div>
+                                    <p>A two-hour deep dive with a detailed action plan.</p>
                                 </div>
-                                <div class="feature-item">
-                                    <div class="feature-icon">✓</div>
-                                    <div>
-                                        <strong>Tool Selection Guidance</strong><br>
-                                        Choose the right AI tools for your specific needs
-                                    </div>
-                                </div>
-                                <div class="feature-item">
-                                    <div class="feature-icon">✓</div>
-                                    <div>
-                                        <strong>ROI Planning</strong><br>
-                                        Calculate expected returns and optimization opportunities
-                                    </div>
+                                <div class="pricing-card">
+                                    <h4>Monthly Retainer</h4>
+                                    <div class="price">$1,997</div>
+                                    <p>Ongoing advisory support and quarterly roadmap reviews.</p>
                                 </div>
                             </div>
-                            
-                            <h4>Pricing:</h4>
-                            <ul>
-                                <li><strong>Discovery Call:</strong> Free - 30-minute assessment</li>
-                                <li><strong>Strategy Session:</strong> $497 - 2-hour deep dive with action plan</li>
-                                <li><strong>Monthly Retainer:</strong> $1,997 - Ongoing strategic support</li>
-                            </ul>
+                            <div style="text-align: center; margin-top: 2rem;">
+                                <a href="#" class="cta-button" onclick="showPage('contact')">Schedule Your AI Strategy Session</a>
+                            </div>
                         </div>
                     </div>
 
                     <!-- AI Implementation -->
                     <div class="service-detail-card">
                         <div class="service-header">
-                            <h2>⚙️ AI Implementation</h2>
-                            <p>Complete done-for-you AI automation setup and integration</p>
+                            <h2>⚙️ AI Implementation & Integration</h2>
+                            <p>Turn plans into reality</p>
                         </div>
                         <div class="service-content">
-                            <p>Our implementation team handles the technical setup and integration of AI solutions, ensuring seamless automation that works from day one.</p>
+                            <p style="font-size: 1.1rem; margin-bottom: 2rem;">Our technical team manages the end-to-end implementation of your automation projects, ensuring seamless integration and robust support.</p>
                             
-                            <div class="service-features">
-                                <div class="feature-item">
-                                    <div class="feature-icon">✓</div>
-                                    <div>
-                                        <strong>Workflow Automation</strong><br>
-                                        Automate repetitive tasks and processes
-                                    </div>
+                            <h3 style="margin-bottom: 1rem;">What We Do</h3>
+                            <ul style="margin-bottom: 2rem; padding-left: 1.5rem;">
+                                <li>Identify and automate repetitive workflows in operations, finance, marketing and client service</li>
+                                <li>Develop custom chatbots that capture leads, answer FAQs and schedule appointments</li>
+                                <li>Integrate AI tools with your CRM, website, email and other systems</li>
+                                <li>Train your team on new workflows and provide post-implementation support</li>
+                            </ul>
+                            
+                            <h3 style="margin-bottom: 1rem;">Pricing Options</h3>
+                            <div class="pricing-grid">
+                                <div class="pricing-card">
+                                    <h4>Starter Package</h4>
+                                    <div class="price">$2,997</div>
+                                    <p>Basic automation setup covering three to five workflows.</p>
                                 </div>
-                                <div class="feature-item">
-                                    <div class="feature-icon">✓</div>
-                                    <div>
-                                        <strong>AI Chatbot Setup</strong><br>
-                                        Custom chatbots for customer service and lead generation
-                                    </div>
+                                <div class="pricing-card">
+                                    <h4>Professional Package</h4>
+                                    <div class="price">$7,497</div>
+                                    <p>Comprehensive automation of up to ten workflows.</p>
                                 </div>
-                                <div class="feature-item">
-                                    <div class="feature-icon">✓</div>
-                                    <div>
-                                        <strong>Integration Services</strong><br>
-                                        Connect AI tools with your existing software stack
-                                    </div>
-                                </div>
-                                <div class="feature-item">
-                                    <div class="feature-icon">✓</div>
-                                    <div>
-                                        <strong>Training & Handoff</strong><br>
-                                        Complete training for your team and ongoing support
-                                    </div>
+                                <div class="pricing-card">
+                                    <h4>Enterprise Solution</h4>
+                                    <div class="price">Custom Pricing</div>
+                                    <p>Full business transformation with unlimited workflows and on-site integration.</p>
                                 </div>
                             </div>
-                            
-                            <h4>Pricing:</h4>
-                            <ul>
-                                <li><strong>Starter Package:</strong> $2,997 - Basic automation setup (3-5 workflows)</li>
-                                <li><strong>Professional Package:</strong> $7,497 - Comprehensive automation (10+ workflows)</li>
-                                <li><strong>Enterprise Solution:</strong> Custom pricing - Full business transformation</li>
-                            </ul>
+                            <div style="text-align: center; margin-top: 2rem;">
+                                <a href="#" class="cta-button">Request a Custom Quote</a>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- Services CTA -->
+            <section class="cta-section">
+                <div class="container">
+                    <h2>Ready to see AI in action?</h2>
+                    <p>Book My Free AI Strategy Session to discuss which service level is right for your business.</p>
+                    <a href="#" class="btn-primary" onclick="showPage('contact')" style="background: white; color: var(--primary);">Book My Free AI Strategy Session</a>
                 </div>
             </section>
         </div>
@@ -1044,55 +1056,103 @@
             <section class="about-hero">
                 <div class="container">
                     <h1>About Clearview Strategy Group</h1>
-                    <p>Empowering businesses through intelligent automation</p>
+                    <p>Democratizing AI automation for small businesses and professional services</p>
                 </div>
             </section>
 
             <section class="about-content">
                 <div class="container">
-                    <div class="about-grid">
-                        <div>
-                            <h2>Our Mission</h2>
-                            <p>At Clearview Strategy Group (CSG AI), we believe that every business, regardless of size, deserves access to the transformative power of artificial intelligence. Our mission is to democratize AI automation by making it accessible, understandable, and actionable for solopreneurs, professional services, and small businesses.</p>
-                            <p>We bridge the gap between complex AI technology and practical business solutions, ensuring that our clients not only implement AI successfully but also understand how to leverage it for sustainable growth.</p>
+                    <div class="about-section">
+                        <h2>Our Mission</h2>
+                        <p>We believe that every business—no matter its size—deserves access to the transformative power of artificial intelligence. Our mission is to <strong>democratize AI automation</strong> by making it accessible, understandable and actionable for solopreneurs, small businesses and professional services firms.</p>
+                        <p>We translate complex technology into practical solutions so that you can unlock efficiencies, improve client experiences and achieve sustainable growth.</p>
+                    </div>
+
+                    <div class="about-section">
+                        <h2>Our Story</h2>
+                        <p>Clearview Strategy Group began with a simple observation: small businesses were missing out on the benefits of AI because most solutions were built for enterprises. We set out to change that by creating a consultancy focused solely on smaller organizations.</p>
+                        <p>Today, we guide businesses through every stage of adoption—from education to strategy to implementation—so they can harness AI without the complexity.</p>
+                    </div>
+
+                    <div class="about-section">
+                        <h2>Why Choose Us</h2>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <h4>Specialized Focus</h4>
+                                <p>We exclusively serve solopreneurs and small to mid-sized professional services firms. We understand your unique challenges and tailor our solutions accordingly.</p>
+                            </div>
+                            <div class="feature-card">
+                                <h4>Holistic Approach</h4>
+                                <p>We offer education, strategy and implementation under one umbrella so you don't have to juggle multiple vendors.</p>
+                            </div>
+                            <div class="feature-card">
+                                <h4>Proven Methodology</h4>
+                                <p>Our three-pillar framework ensures each project delivers measurable outcomes.</p>
+                            </div>
+                            <div class="feature-card">
+                                <h4>Industry Expertise</h4>
+                                <p>Our team has deep experience in professional services, from law and accounting to dental and medspa practices.</p>
+                            </div>
+                            <div class="feature-card">
+                                <h4>Ongoing Partnership</h4>
+                                <p>We provide continuous guidance to help you evolve your automation strategy as new tools emerge.</p>
+                            </div>
                         </div>
-                        <div>
-                            <h2>Why Choose CSG AI?</h2>
-                            <ul style="list-style: none; padding: 0;">
-                                <li style="margin-bottom: 1rem;">✓ <strong>Specialized Focus:</strong> We exclusively serve solopreneurs and small businesses</li>
-                                <li style="margin-bottom: 1rem;">✓ <strong>Proven Methodology:</strong> Our three-pillar approach ensures success</li>
-                                <li style="margin-bottom: 1rem;">✓ <strong>Industry Expertise:</strong> Deep knowledge in professional services</li>
-                                <li style="margin-bottom: 1rem;">✓ <strong>Ongoing Support:</strong> We're partners in your long-term success</li>
-                                <li style="margin-bottom: 1rem;">✓ <strong>Results-Driven:</strong> Measurable ROI and efficiency improvements</li>
-                            </ul>
+                    </div>
+
+                    <div class="about-section">
+                        <h2>Core Values</h2>
+                        <div class="values-grid">
+                            <div class="value-card">
+                                <h4>Clarity</h4>
+                                <p>We simplify complex AI concepts and communicate strategies transparently.</p>
+                            </div>
+                            <div class="value-card">
+                                <h4>Partnership</h4>
+                                <p>We work as an extension of your team, invested in your long-term success.</p>
+                            </div>
+                            <div class="value-card">
+                                <h4>Innovation</h4>
+                                <p>We stay on top of the latest AI developments to bring you cutting-edge solutions.</p>
+                            </div>
+                            <div class="value-card">
+                                <h4>Results</h4>
+                                <p>We measure success by tangible improvements in efficiency and profitability.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="mission-values">
+            <!-- About CTA -->
+            <section class="cta-section">
+                <div class="container">
+                    <h2>Ready to take the first step?</h2>
+                    <p>If you're ready to take the first step toward smarter operations and stronger growth, we'd love to learn about your goals.</p>
+                    <a href="#" class="btn-primary" onclick="showPage('contact')" style="background: white; color: var(--primary);">Book My Free AI Strategy Session</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Tools Page -->
+        <div id="tools" class="page">
+            <section class="services-hero">
+                <div class="container">
+                    <h1>AI Tools & Resources</h1>
+                    <p>Practical tools and templates to help you get started with AI automation</p>
+                </div>
+            </section>
+
+            <section class="services-detail">
                 <div class="container">
                     <div class="section-header">
-                        <h2>Our Core Values</h2>
-                        <p>The principles that guide everything we do</p>
+                        <h2>Coming Soon</h2>
+                        <p>We're developing a comprehensive library of AI tools, templates, and resources specifically designed for small businesses. Check back soon!</p>
                     </div>
-                    <div class="values-grid">
-                        <div class="value-card">
-                            <h3>🎯 Clarity</h3>
-                            <p>We make complex AI concepts simple and actionable, providing clear strategies and transparent communication.</p>
-                        </div>
-                        <div class="value-card">
-                            <h3>🤝 Partnership</h3>
-                            <p>We're not just service providers – we're strategic partners invested in your long-term success and growth.</p>
-                        </div>
-                        <div class="value-card">
-                            <h3>🚀 Innovation</h3>
-                            <p>We stay at the forefront of AI technology to bring you the latest and most effective automation solutions.</p>
-                        </div>
-                        <div class="value-card">
-                            <h3>📈 Results</h3>
-                            <p>Every solution we implement is designed to deliver measurable improvements in efficiency and profitability.</p>
-                        </div>
+                    
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <p>Want to be notified when our tools are ready?</p>
+                        <a href="#" class="cta-button" onclick="scrollToNewsletter()">Get Weekly AI Insights</a>
                     </div>
                 </div>
             </section>
@@ -1100,79 +1160,23 @@
 
         <!-- Blog Page -->
         <div id="blog" class="page">
-            <section class="blog-hero">
+            <section class="services-hero">
                 <div class="container">
                     <h1>AI Insights & Resources</h1>
-                    <p>Stay updated with the latest AI trends, tips, and success stories</p>
+                    <p>Practical tips, case studies, and automation strategies for small businesses</p>
                 </div>
             </section>
 
-            <section class="blog-content">
+            <section class="services-detail">
                 <div class="container">
-                    <div class="blog-grid">
-                        <article class="blog-card">
-                            <div class="blog-image">📝</div>
-                            <div class="blog-card-content">
-                                <div class="blog-meta">January 15, 2025 • AI Strategy</div>
-                                <h3>5 AI Tools Every Solopreneur Should Use in 2025</h3>
-                                <p>Discover the essential AI tools that can transform your solo business operations and boost productivity by up to 300%.</p>
-                                <a href="#" class="btn-primary">Read More</a>
-                            </div>
-                        </article>
-
-                        <article class="blog-card">
-                            <div class="blog-image">🏥</div>
-                            <div class="blog-card-content">
-                                <div class="blog-meta">January 10, 2025 • Case Study</div>
-                                <h3>How a Dental Practice Automated Patient Communications</h3>
-                                <p>Learn how Dr. Smith's practice reduced administrative time by 75% while improving patient satisfaction scores.</p>
-                                <a href="#" class="btn-primary">Read More</a>
-                            </div>
-                        </article>
-
-                        <article class="blog-card">
-                            <div class="blog-image">💡</div>
-                            <div class="blog-card-content">
-                                <div class="blog-meta">January 5, 2025 • Tutorial</div>
-                                <h3>Building Your First AI Workflow: A Step-by-Step Guide</h3>
-                                <p>Complete beginner's guide to creating automated workflows that save time and reduce manual errors.</p>
-                                <a href="#" class="btn-primary">Read More</a>
-                            </div>
-                        </article>
-
-                        <article class="blog-card">
-                            <div class="blog-image">📊</div>
-                            <div class="blog-card-content">
-                                <div class="blog-meta">December 28, 2024 • Analysis</div>
-                                <h3>ROI of AI Automation: What to Expect in Your First Year</h3>
-                                <p>Data-driven insights on the financial impact of AI implementation for small businesses and professional services.</p>
-                                <a href="#" class="btn-primary">Read More</a>
-                            </div>
-                        </article>
-
-                        <article class="blog-card">
-                            <div class="blog-image">🎯</div>
-                            <div class="blog-card-content">
-                                <div class="blog-meta">December 20, 2024 • Strategy</div>
-                                <h3>AI Implementation Roadmap for Professional Services</h3>
-                                <p>Strategic framework for implementing AI solutions in law firms, accounting practices, and consulting businesses.</p>
-                                <a href="#" class="btn-primary">Read More</a>
-                            </div>
-                        </article>
-
-                        <article class="blog-card">
-                            <div class="blog-image">🔧</div>
-                            <div class="blog-card-content">
-                                <div class="blog-meta">December 15, 2024 • Tools</div>
-                                <h3>ChatGPT vs Claude vs Gemini: Which AI Assistant is Right for Your Business?</h3>
-                                <p>Comprehensive comparison of leading AI assistants and how to choose the best one for your specific needs.</p>
-                                <a href="#" class="btn-primary">Read More</a>
-                            </div>
-                        </article>
+                    <div class="section-header">
+                        <h2>Blog Coming Soon</h2>
+                        <p>We're preparing valuable content about AI automation, case studies, and practical tips for small businesses. Stay tuned!</p>
                     </div>
-
+                    
                     <div style="text-align: center; margin-top: 3rem;">
-                        <a href="#" class="cta-button">Load More Articles</a>
+                        <p>Don't miss our latest insights when they're published.</p>
+                        <a href="#" class="cta-button" onclick="scrollToNewsletter()">Subscribe to Our Newsletter</a>
                     </div>
                 </div>
             </section>
@@ -1182,8 +1186,8 @@
         <div id="contact" class="page">
             <section class="contact-hero">
                 <div class="container">
-                    <h1>Get Started Today</h1>
-                    <p>Ready to transform your business with AI? Let's discuss your goals and create a custom solution.</p>
+                    <h1>Book My Free AI Strategy Session</h1>
+                    <p>Schedule a consultation where our expert will assess your needs and outline a high-level automation roadmap for your business</p>
                 </div>
             </section>
 
@@ -1191,87 +1195,41 @@
                 <div class="container">
                     <div class="contact-grid">
                         <div>
-                            <h2>Client Intake Form</h2>
-                            <p style="margin-bottom: 2rem;">Please fill out this form to schedule your free consultation. We'll use this information to prepare a customized discussion about your AI automation needs.</p>
+                            <h2>Book Your Free AI Strategy Session</h2>
+                            <p style="margin-bottom: 2rem;">Schedule a consultation where our expert will assess your needs and outline a high-level automation roadmap for your business.</p>
                             
                             <!-- Client Intake Form -->
-                            <iframe data-tally-src="https://tally.so/embed/nrMarp?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1696" frameborder="0" marginheight="0" marginwidth="0" title="Client Intake Form"></iframe>
+                            <iframe data-tally-src="https://tally.so/embed/nrMarp?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1721" frameborder="0" marginheight="0" marginwidth="0" title="Client Intake Form"></iframe>
                         </div>
 
                         <div class="contact-info">
-                            <h2>Contact Information</h2>
-                            <div class="contact-item">
-                                <div class="contact-icon">📧</div>
-                                <div>
-                                    <strong>Email</strong><br>
-                                    hello@clearviewstrategy.com
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <div class="contact-icon">📞</div>
-                                <div>
-                                    <strong>Phone</strong><br>
-                                    (555) 123-4567
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <div class="contact-icon">💬</div>
-                                <div>
-                                    <strong>Live Chat</strong><br>
-                                    Available 9 AM - 6 PM EST
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <div class="contact-icon">📍</div>
-                                <div>
-                                    <strong>Office</strong><br>
-                                    Fort Lauderdale, FL<br>
-                                    Remote consultations available
-                                </div>
-                            </div>
-
-                            <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Office Hours</h3>
-                            <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM EST<br>
-                            <strong>Saturday:</strong> 10:00 AM - 2:00 PM EST<br>
-                            <strong>Sunday:</strong> Closed</p>
-
-                            <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Emergency Support</h3>
-                            <p>For existing clients with urgent technical issues, emergency support is available 24/7 via our priority support line.</p>
-                        </div>
-
-                        <div>
-                            <h2>Client Intake Form</h2>
-                            <p style="margin-bottom: 2rem;">Please fill out this form to schedule your free consultation. We'll use this information to prepare a customized discussion about your AI automation needs.</p>
+                            <h2>Get In Touch</h2>
                             
-                            <!-- Client Intake Form -->
-                            <iframe data-tally-src="https://tally.so/embed/nrMarp?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1696" frameborder="0" marginheight="0" marginwidth="0" title="Client Intake Form"></iframe>
+                            <div style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+                                <h4 style="margin-bottom: 1rem;">📧 Email</h4>
+                                <p>hello@clearviewstrategy.com</p>
+                            </div>
 
-                            <!-- Alternative Contact Form (if Tally not ready) -->
-                            <div style="margin-top: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
-                                <h4>Quick Contact (Alternative)</h4>
-                                <div class="form-group">
-                                    <label>Name *</label>
-                                    <input type="text" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Email *</label>
-                                    <input type="email" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Business Type</label>
-                                    <select>
-                                        <option>Solopreneur</option>
-                                        <option>Dental Practice</option>
-                                        <option>Medspa/Aesthetics</option>
-                                        <option>Professional Services</option>
-                                        <option>Other</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label>How can we help?</label>
-                                    <textarea placeholder="Describe your current challenges and goals..."></textarea>
-                                </div>
-                                <button class="btn-primary" style="width: 100%;">Send Message</button>
+                            <div style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+                                <h4 style="margin-bottom: 1rem;">📞 Phone</h4>
+                                <p>(555) 123-4567</p>
+                            </div>
+
+                            <div style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
+                                <h4 style="margin-bottom: 1rem;">⏰ Office Hours</h4>
+                                <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM EST<br>
+                                <strong>Weekend:</strong> By appointment only</p>
+                            </div>
+
+                            <div style="background: white; padding: 1.5rem; border-radius: 8px;">
+                                <h4 style="margin-bottom: 1rem;">🎯 What to Expect</h4>
+                                <p>During your free strategy session, we'll:</p>
+                                <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                                    <li>Assess your current processes</li>
+                                    <li>Identify automation opportunities</li>
+                                    <li>Provide a high-level roadmap</li>
+                                    <li>Discuss next steps</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -1286,7 +1244,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Clearview Strategy Group</h3>
-                    <p>AI Automation Specialists helping solopreneurs and small businesses transform their operations with intelligent automation solutions.</p>
+                    <p>AI Automation Specialists helping small businesses and professional services unlock growth through intelligent automation.</p>
                     <p style="margin-top: 1rem;">
                         <strong>Phone:</strong> (555) 123-4567<br>
                         <strong>Email:</strong> hello@clearviewstrategy.com
@@ -1297,20 +1255,19 @@
                     <h3>Services</h3>
                     <ul>
                         <li><a href="#" onclick="showPage('services')">AI Education</a></li>
-                        <li><a href="#" onclick="showPage('services')">AI Consultations</a></li>
+                        <li><a href="#" onclick="showPage('services')">AI Strategy Consulting</a></li>
                         <li><a href="#" onclick="showPage('services')">AI Implementation</a></li>
-                        <li><a href="#" onclick="showPage('contact')">Free Consultation</a></li>
+                        <li><a href="#" onclick="showPage('contact')">Free Strategy Session</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h3>Resources</h3>
                     <ul>
+                        <li><a href="#" onclick="showPage('tools')">AI Tools</a></li>
                         <li><a href="#" onclick="showPage('blog')">Blog</a></li>
+                        <li><a href="#" onclick="scrollToNewsletter()">Newsletter</a></li>
                         <li><a href="#">Case Studies</a></li>
-                        <li><a href="#">Free Tools</a></li>
-                        <li><a href="#">AI Readiness Assessment</a></li>
-                        <li><a href="#">ROI Calculator</a></li>
                     </ul>
                 </div>
                 
@@ -1321,35 +1278,15 @@
                         <li><a href="#" onclick="showPage('contact')">Contact</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Careers</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Clearview Strategy Group - AI Automation Specialists. All rights reserved. | Empowering businesses through intelligent automation.</p>
+                <p>&copy; 2025 Clearview Strategy Group. All rights reserved. | Democratizing AI automation for small businesses.</p>
             </div>
         </div>
     </footer>
-
-    <!-- Chatbot Widget -->
-    <div class="chatbot-widget">
-        <div class="chatbot-popup" id="chatbotPopup">
-            <div class="chatbot-header">
-                <span>Clearview AI Assistant</span>
-                <button onclick="toggleChatbot()" style="float: right; background: none; border: none; color: white; font-size: 1.2rem;">×</button>
-            </div>
-            <div class="chatbot-messages" id="chatbotMessages">
-                <div style="background: #f1f5f9; padding: 0.5rem; border-radius: 6px; margin-bottom: 1rem;">
-                    <strong>Clearview AI Bot:</strong> Hi! I'm here to help you learn about our AI automation services. What would you like to know?
-                </div>
-            </div>
-            <div class="chatbot-input">
-                <input type="text" placeholder="Type your message..." onkeypress="handleChatInput(event)">
-            </div>
-        </div>
-        <button class="chatbot-button" onclick="toggleChatbot()">🤖</button>
-    </div>
 
     <!-- JavaScript -->
     <script>
@@ -1385,47 +1322,15 @@
             document.getElementById('navLinks').classList.toggle('active');
         }
 
-        // Chatbot
-        function toggleChatbot() {
-            document.getElementById('chatbotPopup').classList.toggle('active');
-        }
-
-        function handleChatInput(event) {
-            if (event.key === 'Enter') {
-                const input = event.target;
-                const message = input.value.trim();
-                if (message) {
-                    addChatMessage('user', message);
-                    input.value = '';
-                    
-                    // Simulate bot response
-                    setTimeout(() => {
-                        const responses = [
-                            "Thanks for your question! Our AI solutions can help automate that process. Would you like to schedule a free consultation?",
-                            "That's a great question about AI automation. Let me connect you with one of our specialists who can provide detailed information.",
-                            "I'd be happy to help! For specific implementation questions, I recommend booking a strategy session with our team.",
-                            "Our AI education programs cover exactly that topic. Would you like me to send you more information about our training courses?"
-                        ];
-                        const randomResponse = responses[Math.floor(Math.random() * responses.length)];
-                        addChatMessage('bot', randomResponse);
-                    }, 1000);
-                }
+        // Newsletter scroll function
+        function scrollToNewsletter() {
+            const newsletter = document.querySelector('.newsletter-section');
+            if (newsletter) {
+                newsletter.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'center'
+                });
             }
-        }
-
-        function addChatMessage(sender, message) {
-            const messagesContainer = document.getElementById('chatbotMessages');
-            const messageDiv = document.createElement('div');
-            messageDiv.style.marginBottom = '1rem';
-            
-            if (sender === 'user') {
-                messageDiv.innerHTML = `<div style="background: var(--primary); color: white; padding: 0.5rem; border-radius: 6px; margin-left: 2rem;"><strong>You:</strong> ${message}</div>`;
-            } else {
-                messageDiv.innerHTML = `<div style="background: #f1f5f9; padding: 0.5rem; border-radius: 6px; margin-right: 2rem;">                        <strong>Clearview AI Bot:</strong> ${message}</div>`;
-            }
-            
-            messagesContainer.appendChild(messageDiv);
-            messagesContainer.scrollTop = messagesContainer.scrollHeight;
         }
 
         // Smooth animations on scroll
@@ -1469,39 +1374,6 @@
             // Trigger initial animation check
             animateOnScroll();
         });
-
-        // CTA Functions for forms
-        function openConsultationForm() {
-            // Scroll to the CTA section with the consultation form
-            document.querySelector('.cta-section').scrollIntoView({ 
-                behavior: 'smooth',
-                block: 'center'
-            });
-        }
-        // Newsletter scroll function
-        function scrollToNewsletter() {
-            document.querySelector('.newsletter-signup').scrollIntoView({ 
-                behavior: 'smooth',
-                block: 'center'
-            });
-        }
-
-        // SEO and Analytics placeholder functions
-        function trackPageView(pageName) {
-            console.log('Page view tracked:', pageName);
-        }
-
-        function trackEvent(category, action, label) {
-            // Event tracking code would go here
-            console.log('Event tracked:', category, action, label);
-        }
-
-        // Newsletter signup (placeholder)
-        function subscribeNewsletter(email) {
-            // Newsletter subscription logic would go here
-            console.log('Newsletter signup:', email);
-            alert('Thank you for subscribing to our AI insights newsletter!');
-        }
     </script>
 </body>
 </html>
